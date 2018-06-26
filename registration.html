@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8"/>
+	<title>Вход на сайт</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1"/>
+	<meta name="keywords" content=""/>
+	<meta name="description" content=""/>
+	<link rel="stylesheet" href="libs/normalize-css/normalize.css"/>
+	<link rel="stylesheet" href="libs/bootstrap-4-grid/grid.min.css"/>
+	<link rel="stylesheet" href="css/main.css"/>
+	<link rel="stylesheet" href="css/custom.css"/>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800&amp;subset=cyrillic-ext" rel="stylesheet">
+</head>
+<body class="login-page">
+	<div class="login-page-content">
+		<div class="login-header">
+			<div class="header-logo">
+				<div class="header-logo__icon"><i class="fas fa-paper-plane"></i></div>
+				<div class="header-logo__text">
+					<div class="header-logo__title">Digital Lifestyle</div>
+				</div>
+			</div><a class="link" href="login.html">Вход</a>
+		</div>
+		<form id="registration-form" class="plate" action="success.html" novalidate>
+			<div class="plate__heading">Регистрация</div>
+			<input id="email" class="input" type="email" placeholder="Введите email" name="name" data-error='Введите email' data-error-format='Неверный формат email'/>
+			<input id="password" class="input" type="password" placeholder="Пароль" name="password" data-error='Введите пароль'/>
+			<div class="plate__links">
+				<label class="label form__label-checkbox">
+					<input class="form__input-checkbox" type="checkbox"/><span class="form__checkbox"> </span>Запомнить меня
+				</label><a class="link" href="#">Забыл пароль</a>
+			</div>
+			<button class="button button--login">Регистрация<span class="button__icon button__icon--right"><i class="fas fa-angle-right"> </i></span></button>
+		</form>
+		<div class="login-footer">
+			<p>&copy; Юрий Ключевский</p>
+			<p>Создано с <i class="fas fa-heart color-heart"></i> в <a href="//webcademy.ru" class="link" target="_blank">WebCademy.ru</a> в 2018 году</p>
+		</div>
+	</div>
+	<script src="libs/jquery/jquery.min.js"></script>
+	<script src="js/registration-form-check.js"></script>
+	<script defer="defer" src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+</body>
+</html>
